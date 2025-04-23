@@ -16,8 +16,8 @@ from io import BytesIO
 logging.basicConfig(level=logging.INFO)
 
 # Lấy biến môi trường
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+TELEGRAM_TOKEN = '8139700391:AAEheUyozzM_q1dvr_rpRb9eEDi8HZhjUpg'
+OPENAI_API_KEY = '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'
 
 # In ra để debug
 print("TELEGRAM_TOKEN =", TELEGRAM_TOKEN)
