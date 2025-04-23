@@ -19,6 +19,8 @@ logging.basicConfig(level=logging.INFO)
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 client = OpenAI(api_key=OPENAI_API_KEY)
+print("TELEGRAM_TOKEN =", TELEGRAM_TOKEN)
+print("OPENAI_API_KEY =", OPENAI_API_KEY)
 
 # Vai trò mặc định
 user_roles = {}
