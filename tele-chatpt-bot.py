@@ -15,12 +15,16 @@ from io import BytesIO
 # Thiết lập log
 logging.basicConfig(level=logging.INFO)
 
-# API Key OpenAI và Telegram
+# Lấy biến môi trường
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-client = OpenAI(api_key=OPENAI_API_KEY)
+
+# In ra để debug
 print("TELEGRAM_TOKEN =", TELEGRAM_TOKEN)
 print("OPENAI_API_KEY =", OPENAI_API_KEY)
+
+# Khởi tạo client
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 # Vai trò mặc định
 user_roles = {}
