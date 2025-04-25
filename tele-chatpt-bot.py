@@ -1,10 +1,5 @@
 import logging
 import os
-from dotenv import load_dotenv
-
-# Load biến môi trường từ file .env
-load_dotenv()
-
 import tempfile
 from telegram import Update, InputFile
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters
@@ -15,7 +10,7 @@ from docx import Document
 from pptx import Presentation
 import pandas as pd
 import fitz  # PyMuPDF
-from io import BytesIO
+from io import BytesIO 
 
 
 # Thiết lập log
